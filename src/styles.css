@@ -21,7 +21,7 @@ img {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 2;
   
@@ -83,8 +83,9 @@ nav ul li {
 }
 
 #titleNav {
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-transform: uppercase;
+  font-family: 'Work Sans', sans-serif;
 }
 
 /* Home Section */
@@ -99,7 +100,7 @@ nav ul li {
   color: White;
   background-image: url(images/background.png);
   background-size: 100%;
-
+  
 }
 
 .home div {
@@ -113,7 +114,7 @@ nav ul li {
   margin-top: 10%;
 }
 
-.home-image {
+.home-phone {
   position: absolute;
   width: 80%;
   right: 0;
@@ -129,10 +130,11 @@ nav ul li {
 	padding:16px 31px;
 	text-decoration:none;
   margin: 5% 5% 0 0;
+  
 }
 
 .button:hover {
-	background-color:#424242;
+	background-color:#2e2e2e;
 }
 
 .button:active {
@@ -149,8 +151,8 @@ nav ul li {
 }
 
 .why div {
-  margin: 8%;
-  padding: 20px;
+  margin: 10%;
+  padding: 30px;
   background-color: #f2f2f2;
   border-radius:28px;
   line-height: 1.5;
@@ -159,12 +161,19 @@ nav ul li {
 
 /* Functionality Section */
 
+.flex-div {
+  margin: 5% auto;
+  padding: 20px;
+  border-radius:28px;
+  filter: drop-shadow(16px 16px 10px #c5c5c5);
+}
+
 .functionality {
   display: block;
   background-color: #f2f2f2;
-  padding: 50px 0 100px 0;
+  padding-top: 50px;
   text-align: center;
-
+  min-height: 80vh;
 }
 
 .functionality-container {
@@ -173,16 +182,17 @@ nav ul li {
 }
 
 .functionality-container div {
-  margin: 5%;
-  padding-top: 20px;
-  background-color: #e7e6e6;
-  border-radius:28px;
-  filter: drop-shadow(16px 16px 10px #c5c5c5);
+  background-color: #51577e;
+  color: white;
+  width: 20%;
+}
+
+.functionality-container div h2 {
+  font-size: 1.4rem;
 }
 
 .functionality-container div img {
-  width: 250px;
-  height: 250px;
+  width: 80%;
   border-radius: 50%;
   border: 12px solid #2c391a;
   margin-bottom: 20px;
@@ -190,10 +200,57 @@ nav ul li {
 
 }
 
-/* Contact Section */
+/* Team Section */
 
-.contact div {
+.team {
+  display: block;
+  padding-top: 50px;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.team-container {
+  display: flex;
+  margin: 0 8%;
+}
+
+.team-container div {
+  background-color: #f2f2f2;
+  width: 15%;
+}
+
+.flex-div p {
+  font-size: 1.2rem;
+}
+
+.team-container div img {
+  width: 100%;
+  border-radius: 50%;
+  border: 12px solid #2c391a;
+  margin-bottom: 20px;
+  background-color: White;
+
+}
+
+/* Download Section */
+.download {
+  background-color: #f2f2f2;
+  min-height: 80vh;
+}
+
+.download div {
   margin: 5%;
+}
+
+.download div h2 {
+  font-weight: lighter;
+}
+
+.welcome-phone {
+  width:80%;
+  border-radius: 40px;
+  filter: drop-shadow(16px 16px 10px #c5c5c5);
+
 }
 
 /* Footer */
@@ -205,5 +262,9 @@ footer {
   background-color: Black;
   color: White;
   text-align: center;
+}
+
+footer p {
+  font-size: 1.2rem;
 }
 

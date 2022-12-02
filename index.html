@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>STARS</title>
+  <link rel="icon" type="image/x-icon" href="src/images/favicon-star.png">
 
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="src/styles.css">
@@ -11,7 +12,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
   
   <!-- Font Awesome Icons-->
   <script src="https://kit.fontawesome.com/7a70d5c651.js" crossorigin="anonymous"></script>
@@ -23,7 +24,7 @@
 
   <header>
     <nav>
-      <a id="titleNav" href="#home">STARS</a>
+      <a id="titleNav" href="#home"><i class="fa-regular fa-star"></i>STARS</a>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Store</a></li>
@@ -43,10 +44,9 @@
       <h1 id="title">STARS</h1> 
       <h2>The future for inproving mental health and productivity in college students.</h2> <br>
       <a href="#why" class="button">Read More</a>      
-      <a href="#" class="button">Download</a>      
-
+      <a href="#download" class="button">Download</a>      
     </div>
-    <div><img class="phone home-image" src="src/images/home-image.png"></div>
+    <div><img class="phone home-phone" src="src/images/home-phone.png"></div>
 
   </section>
 
@@ -58,11 +58,12 @@
       <p>Many students struggle with mental health issues either due to academics, or extracurriculars as well as other social aspects of school. 
         To combat this, we created STARS, a mobile application that uses machine learning and artificial intelligence to analyze user data to suggest daily 
         mental health activities as well as effective study sessions based on schedules for college students. STARS also has the ability to connect users with
-        others on the app by sharing completed activities to encourage one another.</p> <br>
-      <p>Our three main points of functionality can be found below.</p>
+        others on the app by sharing completed activities to encourage each other.</p> <br>
+      <a href="#" class="button">Learn More</a>      
+
     </div>
     <div>
-      <img class="phone calendar-image" src="src/images/calendar.png">
+      <img class="phone" src="src/images/calendar-phone.png">
     </div>
 
   </section>
@@ -70,48 +71,81 @@
   <!-- Functionality Section -->
 
   <section class="functionality">
-    <h1>Our Goals</h1>
+    <h1>Our Goals.</h1>
     <div class="functionality-container">
 
-      <div>
+      <div class="flex-div">
         <img src="src/images/heart.png">
-        <h2>Improve Mental Health</h2> <br>
-        <p>
-        </p>
+        <h2>Improve Overall Health</h2> <br>
       </div>
 
-      <div>
-        <img src="src/images/dumbbell.png">
-        <h2>Improve Productivity</h2> <br>
-        <p>
-        </p>
+      <div class="flex-div">
+        <img src="src/images/productivity.png">
+        <h2>Increase Productivity</h2> <br>
       </div>
 
-      <div>
-        <img src="src/images/music.png">
+      <div class="flex-div">
+        <img src="src/images/connect.png">
         <h2>Connect With Others</h2> <br>
-        <p>
-        </p>
       </div>
 
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Team Section -->
 
-  <section class="contact" id="contact">
-    <div><img src="src/images/mural.png"></div>
+  <section class="team">
+    <h1>Meet the Team.</h1>
+    <div class="team-container">
+
+      <div class="flex-div">
+        <img src="src/images/Minseo.png">
+        <h2>Minseo</h2>
+        <h2>Kim</h2> <br>
+        <p>Team Lead</p>
+      </div>
+
+      <div class="flex-div">
+        <img src="src/images/Britney.png">
+        <h2>Britney</h2>
+        <h2>Wang</h2> <br>
+        <p>UI/UX Designer</p>
+      </div>
+
+      <div class="flex-div">
+        <img src="src/images/Jude.png">
+        <h2>Jude</h2> 
+        <h2>Bislig</h2><br>
+        <p>Software Developer</p>
+      </div>
+
+      <div class="flex-div">
+        <img src="src/images/Sanjay.png">
+        <h2>Sanjay</h2> 
+        <h2>Mannangi</h2><br>
+        <p>Data Analyst</p>
+
+      </div>
+      
+      <div class="flex-div">
+        <img src="src/images/Austin.png">
+        <h2>Austin</h2>
+        <h2>Lee</h2> <br>
+        <p>User Researcher</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- download Section -->
+
+  <section class="download" id="download">
+    <div><img class="phone welcome-phone" src="src/images/welcome-phone.png"></div>
     <div>
-      <h1>Team then download</h1>
-      <form class="" action="mailto:jeb6596@psu.edu" method="post" enctype="text/plain">
-        <label>Name:</label>
-        <input type="text" name="Your name" placeholder="Your name"/><br>
-        <label>Email:</label>
-        <input type="email" name="Your email" placeholder="Your email"/><br>
-        <label>Message:</label><br>
-        <textarea name="Your message" cols="50" rows="10" placeholder="Your message"></textarea><br>
-        <input type="submit"/>
-      </form>
+      <h1>Take the next step today.</h1>
+      <h2>Strive for a better tomorrow and reach for the stars.</h2> <br>
+      <a href="#" class="button"><i class="fa-brands fa-apple"></i>Download </a>
+      <a href="#" class="button"><i class="fa-brands fa-google-play"></i>Download </a>
     </div>
   </section>
 
@@ -121,7 +155,8 @@
     <a href="https://www.linkedin.com/in/jude-bislig-56547a224/"><i class="fa-brands fa-linkedin"></i></a>
     <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
     <a href="https://github.com/judebislig"><i class="fa-brands fa-github"></i></a>
-    <p>484-542-2599 | jeb6596@psu.edu</p>
+    <br>
+    <p>© Copyright 2022 STARS</p>
   </footer>
 
 </body>
