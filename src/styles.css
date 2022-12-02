@@ -65,7 +65,7 @@ nav {
   height: 64px;
   width: 100%;
   padding: 20px 10%;
-  background-color: Black;
+  background-color: #121212;
   position: fixed;
   align-items: center;
   display: flex;
@@ -116,9 +116,9 @@ nav ul li {
 
 .home-phone {
   position: absolute;
-  width: 80%;
+  width: 70%;
   right: 0;
-
+  margin-top: 20%;
 }
 
 .button {
@@ -170,10 +170,11 @@ nav ul li {
 
 .functionality {
   display: block;
-  background-color: #f2f2f2;
+  background-color: #51577e;
   padding-top: 50px;
   text-align: center;
-  min-height: 80vh;
+  min-height: 60vh;
+  color: white;
 }
 
 .functionality-container {
@@ -182,7 +183,8 @@ nav ul li {
 }
 
 .functionality-container div {
-  background-color: #51577e;
+  background-color: #383d5b;
+  filter: drop-shadow(16px 16px 10px #1f2233);
   color: white;
   width: 20%;
 }
@@ -194,7 +196,6 @@ nav ul li {
 .functionality-container div img {
   width: 80%;
   border-radius: 50%;
-  border: 12px solid #2c391a;
   margin-bottom: 20px;
   background-color: White;
 
@@ -226,7 +227,6 @@ nav ul li {
 .team-container div img {
   width: 100%;
   border-radius: 50%;
-  border: 12px solid #2c391a;
   margin-bottom: 20px;
   background-color: White;
 
@@ -259,7 +259,7 @@ footer {
   padding-top: 25px;
   height: 125px;
   width: 100%;
-  background-color: Black;
+  background-color: #121212;
   color: White;
   text-align: center;
 }
