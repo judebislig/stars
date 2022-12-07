@@ -86,6 +86,7 @@ nav ul li {
   font-size: 2rem;
   text-transform: uppercase;
   font-family: 'Work Sans', sans-serif;
+  font-style: italic;
 }
 
 /* Home Section */
@@ -98,7 +99,7 @@ nav ul li {
 
 .home {
   color: White;
-  background-image: url(images/background.png);
+  background-image: url(src/images/background.png);
   background-size: 100%;
   
 }
