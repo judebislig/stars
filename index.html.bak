@@ -66,8 +66,8 @@
       <a href="#" class="button">Learn More</a>      
 
     </div>
-    <div class="starscol">
-      <img class="phone why-phone" src="src/images/calendar-phone.png">
+    <div class="col">
+      <img class="phone" src="src/images/calendar-phone.png">
     </div>
 
   </section>

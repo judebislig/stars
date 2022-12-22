@@ -7,12 +7,13 @@
 }
 
 section {
-  width: 100%;
+  /*width: 100vw;*/
   min-height: 105vh;
   display: flex;
   justify-content: center;
   background-color: white;
 }
+
 
 img {
   width: 400px;
@@ -20,16 +21,19 @@ img {
   border: 12px solid Black;
 }
 
-h1 {
+.starscol h1 {
   font-size: 4rem;
   font-weight: bold;
-  line-height: 2;
-  
+  line-height: 2;  
 }
 
-h2 {
+.starscol h2 {
   font-size: 2.2rem;
 }
+.starscol h3 {
+  font-size: 1.2rem;
+}
+
 
 p {
   font-size: 1.5rem;
@@ -50,12 +54,12 @@ form {
 }
 
 i {
-  font-size: 1.75rem;
-  margin: 10px;
+  font-size: 1.2rem;
+  margin: 5px;
 }
 
 .phone {
-  border-radius:75px;
+  border-radius:12%;
   border: 6px black solid;
 }
 
@@ -91,23 +95,19 @@ nav ul li {
 
 /* Home Section */
 
-#title {
-  font-size: 6rem;
-  line-height: 1.5;
-  margin-bottom: 8%;
-}
+
 
 .home {
   color: White;
-  background-image: url(src/images/background.png);
-  background-size: 100%;
+  background: url(images/background.png) no-repeat;
+  background-size: cover;
   
 }
 
 .home div {
   transform: translateY(64px);
   margin: 5%;
-  width: 35%;
+  width: 35rem;
 }
 
 
@@ -117,20 +117,20 @@ nav ul li {
 
 .home-phone {
   position: absolute;
-  width: 70%;
-  right: 0;
+  width: 25rem;
   margin-top: 20%;
+  right:0;
 }
 
 .button {
-	background-color:#292929;
+	background-color:#1d1d1d;
 	border-radius:28px;
 	display:inline-block;
 	cursor:pointer;
 	font-size:1.5rem;
 	padding:16px 31px;
 	text-decoration:none;
-  margin: 5% 5% 0 0;
+  margin: 5% 5% 5% 0;
   
 }
 
@@ -167,6 +167,18 @@ nav ul li {
   padding: 20px;
   border-radius:28px;
   filter: drop-shadow(16px 16px 10px #c5c5c5);
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.flex-div:hover {
+  transform: translateY(-20px);
 }
 
 .functionality {
@@ -266,6 +278,177 @@ footer {
 }
 
 footer p {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 3;
 }
 
+
+ 
+@media only screen and (max-width: 991px) {
+   
+
+.home div {
+  transform: translateY(64px);
+  margin: 4rem;
+  max-width: 30rem;
+}
+.home-phone {  
+   /* position: relative;*/
+  width: 20rem; 
+  margin-top: 20%;
+}
+  
+.why-phone {  
+  /* position: relative;*/
+ width: 20rem; 
+}
+
+.why div {
+  margin: 10% 5%;
+  padding: 30px;
+}
+
+.starscol h1 {
+  font-size:3em;
+}
+
+.starscol p {
+  font-size:1.2em;
+}
+
+} 
+
+@media only screen and (max-width: 768px) {
+  
+.starscol h1 {
+  font-size:3em;
+}
+.starscol h2 {
+  font-size:2em;
+}
+.starscol h3 {
+  font-size:1em;
+}
+
+.starscol p {
+  font-size:1em;
+}
+
+.home div {
+  transform: translateY(64px);
+  margin: 4rem;
+  max-width: 20rem;
+}
+.why div {
+  margin: 4rem;
+  max-width: 20rem;
+}
+
+.home-phone {  
+  width: 15rem; 
+  margin-top: 20%;
+}
+  
+.why-phone {  
+  /* position: relative;*/
+ width: 15rem; 
+}
+
+.why div {
+  margin: 10% 2%;
+  padding: 30px;
+}
+
+.button {
+  font-size: 1em;
+}
+
+.functionality-container {
+  flex-direction: column;
+}
+
+.functionality-container div {
+  width: 15rem;
+}
+
+.team-container {
+  flex-direction: column;
+}
+
+.team-container div {
+  width: 15rem;
+}
+}
+ 
+@media only screen and (max-width: 576px) {
+section {
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.starscol h1 {
+  font-size:2.5em;
+}
+.starscol h2 {
+  font-size:1.7em;
+}
+.starscol h3 {
+  font-size:1em;
+}
+
+.home div {
+  transform: translateY(64px);
+  margin: 4rem;
+  max-width: 20rem;
+}
+.home-phone {  
+  position: relative;
+  width: 100%; 
+  margin-top: 20%;
+} 
+.why div {  
+  margin: 4rem;
+  max-width: 100%;
+}
+
+.why-phone {
+  width: 100%;
+}
+
+.welcome-phone {
+  width: 20em;
+  margin: 10%;
+}
+
+.download {
+  text-align: center;
+}
+
+} 
+
+@media only screen and (max-width: 480px) {
+  section {
+  flex-direction: column;
+}
+.starscol h1 {
+  font-size:2.0em;
+}
+.starscol h2 {
+  font-size:1.0em;
+}
+.starscol h3 {
+  font-size:.7em;
+}
+
+.home div {
+  transform: translateY(64px);
+  margin: 4rem;
+  max-width: 15rem;
+}
+.home-phone {  
+  position: relative;
+  width: 100%; 
+  margin-top: 20%;
+} 
+  
+} 
