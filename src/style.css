@@ -67,7 +67,7 @@ i {
 
 nav {
   height: 64px;
-  width: 100%;
+  width: 100vw;
   padding: 20px 10%;
   background-color: #121212;
   position: fixed;
@@ -75,6 +75,7 @@ nav {
   display: flex;
   justify-content: space-between;
   z-index: 10;
+  overflow-y: hidden;
 }
 
 nav ul {
@@ -320,6 +321,10 @@ footer p {
 
 @media only screen and (max-width: 768px) {
   
+.nav-list {
+  display: none;
+}
+
 .starscol h1 {
   font-size:3em;
 }
@@ -361,6 +366,10 @@ footer p {
 
 .button {
   font-size: 1em;
+}
+
+i:not(.fa-regular) {
+  font-size: 1rem;
 }
 
 .functionality-container {
@@ -416,7 +425,7 @@ section {
 }
 
 .welcome-phone {
-  width: 20em;
+  width: 18em;
   margin: 10%;
 }
 
@@ -451,4 +460,9 @@ section {
   margin-top: 20%;
 } 
   
+.welcome-phone {
+  width: 15em;
+  margin: 10%;
+}
+
 } 
