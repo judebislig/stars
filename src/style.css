@@ -1,3 +1,44 @@
+:root {
+  --main-bg-color: #51577e;
+  --main-darker-color: #383d5b;
+  --alt-bg-color: white;
+  --off-bg-color: #f2f2f2;
+  --complementary-color: rgb(18, 18, 18);
+  --shadow-color: #c5c5c5;
+}
+
+
+/* Dark Mode */
+
+
+.dark section {
+  color: white;
+}
+
+.dark .why, .dark .team{
+  background-color: rgb(50, 50, 50);
+}
+
+.dark .dark-div {
+  background-color: rgb(38, 38, 38);
+  filter: drop-shadow(16px 16px 10px rgb(17, 17, 17));
+
+}
+
+.dark .download {
+  background-color: rgb(40, 40, 40);
+}
+
+.dark .welcome-phone {
+  filter: drop-shadow(16px 16px 10px rgb(17, 17, 17));
+}
+
+.dark .functionality {
+  border: 10px solid #464c6d;
+}
+
+/* Main */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +53,14 @@ section {
   min-height: 105vh;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: var(--alt-bg-color);
 }
 
 
 img {
   width: 400px;
   margin-bottom: 50px;
-  border: 5px solid Black;
+  border: 5px solid var(--complementary-color);
 }
 
 .starscol h1 {
@@ -42,11 +83,11 @@ p {
 
 a {
   text-decoration: none;
-  color: White;
+  color: var(--alt-bg-color);
 }
 
 a:hover {
-  color: #b3b3b3;
+  color: var(--shadow-color);
 }
 
 form {
@@ -61,7 +102,7 @@ i {
 
 .phone {
   border-radius:12%;
-  border: 6px black solid;
+  border: 6px var(--complementary-color) solid;
 }
 
 /* Navbar */
@@ -70,7 +111,7 @@ nav {
   height: 50px;
   width: 100%;
   padding: 20px 10%;
-  background-color: #121212;
+  background-color: var(--complementary-color);
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -91,7 +132,7 @@ nav {
 
 
 .home {
-  color: White;
+  color: var(--alt-bg-color);
   background: url(images/background.png) no-repeat;
   background-size: cover;
   
@@ -99,7 +140,6 @@ nav {
 
 .home div {
   transform: translateY(50px);
-  margin: 5%;
   width: 35rem;
 }
 
@@ -116,7 +156,7 @@ nav {
 }
 
 .button {
-	background-color:#1d1d1d;
+	background-color:var(--complementary-color);
 	border-radius:28px;
 	display:inline-block;
 	cursor:pointer;
@@ -147,10 +187,10 @@ nav {
 .why div {
   margin: 8%;
   padding: 30px;
-  background-color: #f2f2f2;
+  background-color: var(--off-bg-color);
   border-radius:28px;
   line-height: 1.5;
-  filter: drop-shadow(16px 16px 10px #d4d6d5);
+  filter: drop-shadow(16px 16px 10px var(--shadow-color));
 }
 
 /* Functionality Section */
@@ -159,7 +199,7 @@ nav {
   margin: 5% auto;
   padding: 20px;
   border-radius:28px;
-  filter: drop-shadow(16px 16px 10px #c5c5c5);
+  filter: drop-shadow(16px 16px 10px var(--shadow-color));
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-transition-duration: 0.3s;
@@ -176,11 +216,11 @@ nav {
 
 .functionality {
   display: block;
-  background-color: #51577e;
+  background-color: var(--main-bg-color);
   padding-top: 50px;
   text-align: center;
   min-height: 60vh;
-  color: white;
+  color: var(--alt-bg-color);
 }
 
 .functionality-container {
@@ -189,9 +229,9 @@ nav {
 }
 
 .functionality-container div {
-  background-color: #383d5b;
-  filter: drop-shadow(16px 16px 10px #1f2233);
-  color: white;
+  background-color: var(--main-darker-color);
+  filter: drop-shadow(8px 8px 5px var(--complementary-color));
+  color: var(--alt-bg-color);
   width: 20%;
 }
 
@@ -203,7 +243,7 @@ nav {
   width: 80%;
   border-radius: 50%;
   margin-bottom: 20px;
-  background-color: White;
+  background-color: var(--alt-bg-color);
 
 }
 
@@ -222,7 +262,7 @@ nav {
 }
 
 .team-container div {
-  background-color: #f2f2f2;
+  background-color: var(--off-bg-color);
   width: 15%;
 }
 
@@ -234,13 +274,13 @@ nav {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 20px;
-  background-color: White;
+  background-color: var(--alt-bg-color);
 
 }
 
 /* Download Section */
 .download {
-  background-color: #f2f2f2;
+  background-color: var(--off-bg-color);
   min-height: 80vh;
 }
 
@@ -255,7 +295,7 @@ nav {
 .welcome-phone {
   width:80%;
   border-radius: 40px;
-  filter: drop-shadow(16px 16px 10px #c5c5c5);
+  filter: drop-shadow(16px 16px 10px var(--shadow-color));
 
 }
 
@@ -265,14 +305,57 @@ footer {
   padding-top: 25px;
   height: 125px;
   width: 100%;
-  background-color: #121212;
-  color: White;
+  background-color: var(--complementary-color);
+  color: var(--alt-bg-color);
   text-align: center;
 }
 
 footer p {
   font-size: 1rem;
   line-height: 3;
+}
+
+/* Checkbox */
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+
+.label {
+  width: 70px;
+  height: 29px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 6px;
+  position: relative;
+}
+
+.switcher {
+  background-color: #fff;
+  position: absolute;
+  top: 4px;
+  left: 11px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  transition: transform 330ms ease-in-out;
+}
+
+.moon {
+  color: #ffa502;
+}
+
+.sun {
+  color: #ffa502;
+}
+
+.checkbox:checked + .label .switcher {
+  transform: translateX(28px);
 }
 
 /* Hamburger Menu */
@@ -287,9 +370,10 @@ footer p {
 }
 
 .menu > li {
-  margin: 0 1rem;
+  margin: auto 1rem;
   overflow: hidden;
 }
+
 
 .menu-button-container {
   display: none;
@@ -309,7 +393,7 @@ footer p {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: var(--alt-bg-color);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -342,6 +426,7 @@ footer p {
 }
 
 @media (max-width: 700px) {
+  
   .menu-button-container {
     display: flex;
   }
@@ -374,7 +459,7 @@ footer p {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: white;
+    color: var(--alt-bg-color);
     background-color: #222;
   }
   .menu > li:not(:last-child) {
@@ -490,7 +575,20 @@ i:not(.fa-regular) {
 }
 
 .functionality-container div {
-  width: 15rem;
+  width: 100%;
+  height: 120px;
+  display: flex;
+}
+
+.functionality-container div img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.functionality-container div h2 {
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .team-container {
@@ -510,7 +608,7 @@ i:not(.fa-regular) {
 
 section {
   flex-direction: column;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
 }
 
 .starscol h1 {

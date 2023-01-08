@@ -1,1 +1,4 @@
-let boxes = document.getElementsByClassName('flex-div');
+function toggleDark() {
+    var element = document.body;
+    element.classList.toggle("dark");
+ }

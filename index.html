@@ -19,14 +19,15 @@
   <!-- Font Awesome Icons-->
   <script src="https://kit.fontawesome.com/7a70d5c651.js" crossorigin="anonymous"></script>
 
-  <!-- Javascript -->
-  <script src="script.js"></script>
+  
 </head>
 
-<body>
+<!-- Javascript -->
+<script src="src/script.js"></script>
 
-  <!-- Navigation Bar -->
+<body>
   
+  <!-- Navigation Bar -->
   <header>
     <nav>
       <a id="titleNav" href="#home"><i class="fa-regular fa-star"></i>STARS</a>
@@ -41,6 +42,15 @@
         <li><a href="#why">About</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#download">Download</a></li>
+        <li>
+          <input type="checkbox" class="checkbox" id="checkbox" onclick="toggleDark()">
+          <label for="checkbox" class="label">
+            <i class="fa-regular fa-moon moon"></i>     
+            <i class="fa-solid fa-sun sun"></i>
+            <div class="switcher"></div>  
+        </label>
+      </li>
+        
     </ul>
     </nav>
   </header>
@@ -53,7 +63,7 @@
       <h1>STARS</h1> 
       <h2>The future for improving mental health and productivity in college students.</h2> <br>
       <a href="#why" class="button">Read More</a>      
-      <a href="#download" class="button">Download</a>      
+      <a href="#download" class="button">Download</a>  
     </div>
     <div class="rightcol"><img class="phone home-phone" src="src/images/home-phone.png"></div>
 
@@ -62,7 +72,7 @@
   <!-- Why Section -->
   
   <section class="why" id="why">
-    <div class="starscol">
+    <div class="starscol dark-div">
       <h1>Why STARS?</h1>
       <p>Many students struggle with mental health issues either due to academics, or extracurriculars as well as other social aspects of school. 
         To combat this, we created STARS, a mobile application that uses machine learning and artificial intelligence to analyze user data to suggest daily 
@@ -71,7 +81,7 @@
       <a href="#" class="button">Learn More</a>      
 
     </div>
-    <div class="starscol">
+    <div class="starscol why-phone-div dark-div">
       <img class="phone why-phone" src="src/images/calendar-phone.png">
     </div>
 
@@ -107,28 +117,28 @@
     <h1>Meet the team.</h1>
     <div class="team-container">
 
-      <div class="flex-div team-box">
+      <div class="flex-div team-box dark-div">
         <img src="src/images/Minseo.png">
         <h2 class="">Minseo</h2>
         <h2>Kim</h2> <br>
         <p>Team Lead</p>
       </div>
 
-      <div class="flex-div team-box">
+      <div class="flex-div team-box dark-div">
         <img src="src/images/Britney.png">
         <h2>Britney</h2>
         <h2>Wang</h2> <br>
         <p>UI/UX Designer</p>
       </div>
 
-      <div class="flex-div team-box">
+      <div class="flex-div team-box dark-div">
         <img src="src/images/Jude.png">
         <h2>Jude</h2> 
         <h2>Bislig</h2><br>
         <p>Software Developer</p>
       </div>
 
-      <div class="flex-div team-box">
+      <div class="flex-div team-box dark-div">
         <img src="src/images/Sanjay.png">
         <h2>Sanjay</h2> 
         <h2>Mannangi</h2><br>
@@ -136,7 +146,7 @@
 
       </div>
       
-      <div class="flex-div team-box">
+      <div class="flex-div team-box dark-div">
         <img src="src/images/Austin.png">
         <h2>Austin</h2>
         <h2>Lee</h2> <br>
@@ -170,4 +180,7 @@
 
 </body>
 
+<script>
+  
+  </script>
 </html>
