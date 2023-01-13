@@ -135,12 +135,12 @@ nav {
   color: var(--alt-bg-color);
   background: url(images/background.png) no-repeat;
   background-size: cover;
-  
+  padding-bottom: 5%;
 }
 
 .home div {
   transform: translateY(50px);
-  width: 35rem;
+  margin: 0 8%;
 }
 
 
@@ -149,10 +149,10 @@ nav {
 }
 
 .home-phone {
-  position: absolute;
-  width: 25rem;
   margin-top: 20%;
-  right:0;
+  filter: drop-shadow(16px 16px 10px var(--complementary-color));
+  width: 20rem;
+
 }
 
 .button {
@@ -191,6 +191,10 @@ nav {
   border-radius:28px;
   line-height: 1.5;
   filter: drop-shadow(16px 16px 10px var(--shadow-color));
+}
+
+.why-phone {
+  width: 20rem;
 }
 
 /* Functionality Section */
@@ -541,25 +545,22 @@ footer p {
   transform: translateY(64px);
   margin: 4rem;
   max-width: 20rem;
+  margin: 0 2%;
 }
 .why div {
   margin: 4rem;
   max-width: 20rem;
+  margin: 5% 2%;
+  padding: 30px;
 }
 
 .home-phone {  
   width: 15rem; 
-  margin-top: 20%;
 }
   
 .why-phone {  
   /* position: relative;*/
  width: 15rem; 
-}
-
-.why div {
-  margin: 10% 2%;
-  padding: 30px;
 }
 
 .button {
@@ -623,14 +624,20 @@ section {
 
 .home div {
   transform: translateY(64px);
-  margin: 4rem;
-  max-width: 20rem;
+  margin: auto;
+  margin-bottom: 5%;
+  text-align: center;
 }
+
+.home div h1 {
+  font-size: 4em;
+}
+
 .home-phone {  
-  position: relative;
   width: 100%; 
   margin-top: 20%;
 } 
+
 .why div {  
   margin: 4rem;
   max-width: 100%;
@@ -652,7 +659,7 @@ section {
 } 
 
 @media only screen and (max-width: 480px) {
-  section {
+section {
   flex-direction: column;
 }
 .starscol h1 {
@@ -667,11 +674,9 @@ section {
 
 .home div {
   transform: translateY(64px);
-  margin: 4rem;
-  max-width: 15rem;
 }
+
 .home-phone {  
-  position: relative;
   width: 100%; 
   margin-top: 20%;
 } 
