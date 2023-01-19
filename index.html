@@ -19,7 +19,6 @@
   <!-- Font Awesome Icons-->
   <script src="https://kit.fontawesome.com/7a70d5c651.js" crossorigin="anonymous"></script>
 
-  
 </head>
 
 <!-- Javascript -->
@@ -58,6 +57,7 @@
   <!-- Home Section -->
 
   <section class="home" id="home">
+
     <div class="starscol">
       <h3>Student Tangible and Relaxing Solutions</h2>
       <h1>STARS</h1> 
@@ -65,13 +65,14 @@
       <a href="#why" class="button">Read More</a>      
       <a href="#download" class="button">Download</a>  
     </div>
-    <div class="rightcol"><img class="phone home-phone" src="src/images/home-phone.png"></div>
+    <div class="starscol"><img class="phone home-phone" src="src/images/home-phone.png"></div>
 
   </section>
 
   <!-- Why Section -->
   
   <section class="why" id="why">
+
     <div class="starscol dark-div">
       <h1>Why STARS?</h1>
       <p>Many students struggle with mental health issues either due to academics, or extracurriculars as well as other social aspects of school. 
@@ -89,24 +90,70 @@
 
   <!-- Functionality Section -->
 
-  <section class="functionality">
+  <section class="functionality" id="functionality">
+
     <h2>We focus on these main goals:</h2>
     <div class="functionality-container">
 
-      <div class="flex-div">
-        <img src="src/images/heart.png">
-        <h2>Improving Overall Health</h2> <br>
-      </div>
+      <!-- Buttons -->
+      
+      <a class="button flex-div" href="#popup1">
+          <img src="src/images/heart.png">
+          <h2>Improving Overall Health</h2> <br>
+      </a> 
+      
+      <a class="button flex-div" href="#popup2">
+          <img src="src/images/productivity.png">
+          <h2>Increasing Productivity</h2> <br>
+      </a> 
 
-      <div class="flex-div">
-        <img src="src/images/productivity.png">
-        <h2>Increasing Productivity</h2> <br>
-      </div>
+      <a class="button flex-div" href="#popup3">
+          <img src="src/images/connect.png">
+          <h2>Connecting With Others</h2> <br>
+      </a>
 
-      <div class="flex-div">
-        <img src="src/images/connect.png">
-        <h2>Connecting With Others</h2> <br>
-      </div>
+      <!-- Buttons End -->
+      
+      <!-- Popups -->
+
+      <a id="popup1" class="overlay" href="#null">
+        <div class="popup">
+          <h2>Improving Overall Health.</h2>
+          <div class="content"> <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </a>
+      
+      <a id="popup2" class="overlay" href="#null">
+        <div class="popup">
+          <h2>Increasing Productivity.</h2>
+          <div class="content"> <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In metus vulputate eu scelerisque felis imperdiet. 
+              Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Ultrices sagittis orci a scelerisque purus semper eget. Maecenas ultricies mi eget mauris pharetra. 
+              Molestie a iaculis at erat pellentesque adipiscing commodo elit. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Amet porttitor eget dolor morbi non arcu. 
+              Dui accumsan sit amet nulla. Sed vulputate mi sit amet. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Integer enim neque volutpat ac tincidunt. 
+              Enim ut tellus elementum sagittis vitae et leo duis. Volutpat maecenas volutpat blandit aliquam etiam erat velit. Pellentesque elit ullamcorper dignissim cras tincidunt. </p>
+          </div>
+        </div>
+      </a>
+      
+      <a id="popup3" class="overlay" href="#null">
+        <div class="popup"> 
+          <h2>Connecting with Others.</h2>
+          <div class="content"> <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed viverra tellus in hac habitasse 
+              platea dictumst vestibulum rhoncus. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Ac turpis egestas maecenas pharetra convallis posuere morbi leo. 
+              Quam viverra orci sagittis eu volutpat odio facilisis mauris. Ullamcorper a lacus vestibulum sed arcu non odio. Elit pellentesque habitant morbi tristique senectus. 
+              Ac turpis egestas sed tempus urna et. Orci a scelerisque purus semper. Massa massa ultricies mi quis hendrerit dolor. Vel quam elementum pulvinar etiam. 
+              Tortor aliquam nulla facilisi cras. In hac habitasse platea dictumst vestibulum. Eu consequat ac felis donec. Mi proin sed libero enim.</p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Popups end -->
 
     </div>
   </section>
@@ -114,6 +161,7 @@
   <!-- Team Section -->
 
   <section class="team" id="team">
+
     <h1>Meet the team.</h1>
     <div class="team-container">
 
@@ -156,9 +204,10 @@
     </div>
   </section>
 
-  <!-- download Section -->
+  <!-- Download Section -->
 
   <section class="download" id="download">
+
     <div><img class="phone welcome-phone" src="src/images/welcome-phone.png"></div>
     <div>
       <h1>Take the next step today.</h1>
@@ -166,6 +215,7 @@
       <a href="#" class="button"><i class="fa-brands fa-apple"></i>Download </a>
       <a href="#" class="button"><i class="fa-brands fa-google-play"></i>Download </a>
     </div>
+
   </section>
 
   <!-- Footer -->

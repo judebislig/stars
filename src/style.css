@@ -232,25 +232,77 @@ nav {
   margin: 0 8%;
 }
 
-.functionality-container div {
+.functionality-container a:not(.overlay) {
   background-color: var(--main-darker-color);
   filter: drop-shadow(8px 8px 5px var(--complementary-color));
   color: var(--alt-bg-color);
-  width: 20%;
 }
 
-.functionality-container div h2 {
-  font-size: 1.4em;
+/* Fix for higher screen size */
+@media only screen and (min-width: 768px) {
+  .functionality-container a:not(.overlay) {
+    width: 20%;
+  }
 }
 
-.functionality-container div img {
+.functionality-container a:not(.overlay):hover {
+  background-color: var(--main-darker-color);
+}
+
+.functionality-container a h2 {
+  font-size: 1.4rem;
+}
+
+.functionality-container a img {
   width: 80%;
   border-radius: 50%;
   margin-bottom: 20px;
   background-color: var(--alt-bg-color);
+}
+
+/* Functionality Popups */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(17, 17, 17, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 4;
+
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 30px;
+  background: var(--main-darker-color);
+  border-radius: 5px;
+  width: 50%;
+  max-height: 80%;
+  position: relative;
+  transition: all 2s ease-in-out;
+  z-index: 5;
+  border-radius:28px;
 
 }
 
+.popup .content {
+  max-height: 30%;
+  overflow: none;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.content p {
+  font-size: 1.1rem;
+}
 /* Team Section */
 
 .team {
@@ -361,6 +413,7 @@ footer p {
 .checkbox:checked + .label .switcher {
   transform: translateX(28px);
 }
+
 
 /* Hamburger Menu */
 
@@ -515,8 +568,12 @@ footer p {
   font-size: 0.8em;
 }
 
-.functionality-container div h2 {
-  font-size: 1em;
+.functionality-container a h2 {
+  font-size: 1rem;
+}
+
+.popup .content p {
+  font-size: 0.9rem;
 }
 
 } 
@@ -575,21 +632,25 @@ i:not(.fa-regular) {
   flex-direction: column;
 }
 
-.functionality-container div {
+.functionality-container a:not(.overlay) {
   width: 100%;
   height: 120px;
   display: flex;
 }
 
-.functionality-container div img {
+.functionality-container a img {
   width: 80px;
   height: 80px;
   margin-right: 10px;
 }
 
-.functionality-container div h2 {
+.functionality-container a h2 {
   margin: auto;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+}
+
+.popup {
+  width: 80%;
 }
 
 .team-container {
@@ -684,6 +745,10 @@ section {
 .welcome-phone {
   width: 15em;
   margin: 10%;
+}
+
+.popup .content p {
+  font-size: 0.8rem;
 }
 
 } 
