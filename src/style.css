@@ -1,6 +1,6 @@
 :root {
-  --main-bg-color: #51577e;
-  --main-darker-color: #383d5b;
+  --main-bg-color: #2b2e58;
+  --main-darker-color: #202344;
   --alt-bg-color: white;
   --off-bg-color: #f2f2f2;
   --complementary-color: rgb(18, 18, 18);
@@ -16,33 +16,31 @@
 }
 
 .dark .why, .dark .team{
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(41, 41, 41);
 }
 
 .dark .dark-div {
-  background-color: rgb(38, 38, 38);
-  filter: drop-shadow(16px 16px 10px rgb(17, 17, 17));
+  background-color: rgb(29, 29, 29);
+  filter: drop-shadow(16px 16px 10px rgb(0, 0, 0));
 
 }
 
 .dark .download {
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(31, 31, 31);
 }
 
 .dark .welcome-phone {
-  filter: drop-shadow(16px 16px 10px rgb(17, 17, 17));
+  filter: drop-shadow(16px 16px 10px rgb(0, 0, 0));
 }
 
 .dark .why div {
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(29, 29, 29);
   filter: none;
 }
-.dark .why-phone {
-  filter: drop-shadow(16px 16px 10px rgb(17, 17, 17));
-}
+
 
 .dark .functionality {
-  border: 10px solid #464c6d;
+  border: 10px solid #15172c;
 }
 
 /* Main */
@@ -113,6 +111,22 @@ i {
   border: 6px var(--complementary-color) solid;
 }
 
+/* To top arrow */
+
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+  
+}
+
+.up-arrow {
+  font-size: 4rem;
+  color: rgb(97, 79, 129);
+  
+}
+
 /* Navbar */
 
 nav {
@@ -141,8 +155,9 @@ nav {
 
 .home {
   color: var(--alt-bg-color);
-  background: url(images/background.png) no-repeat;
+  background: url(images/background.jpg) no-repeat;
   background-size: cover;
+  background-blend-mode: hue;
   padding-bottom: 5%;
 }
 
@@ -189,7 +204,7 @@ nav {
 
 .why {
   position: relative;
-  z-index: 1;
+  z-index: -2;
 }
 
 .why div {
@@ -538,6 +553,9 @@ footer p {
 
 @media only screen and (max-width: 991px) {
    
+.scroll-up {
+  opacity: 0;
+}
 
 .home div {
   transform: translateY(64px);
@@ -606,6 +624,10 @@ footer p {
   font-size:1em;
 }
 
+.section-header {
+  margin-bottom: 5%;
+}
+
 .home div {
   transform: translateY(64px);
   margin: 4rem;
@@ -632,7 +654,7 @@ footer p {
   font-size: 1em;
 }
 
-i:not(.fa-regular) {
+i:not(.fa-regular, .up-arrow) {
   font-size: 1rem;
 }
 
@@ -738,7 +760,7 @@ section {
   font-size:1.0em;
 }
 .starscol h3 {
-  font-size:.7em;
+  font-size:1em;
 }
 
 .home div {
