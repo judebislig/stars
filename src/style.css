@@ -33,6 +33,14 @@
   filter: drop-shadow(16px 16px 10px rgb(17, 17, 17));
 }
 
+.dark .why div {
+  background-color: rgb(50, 50, 50);
+  filter: none;
+}
+.dark .why-phone {
+  filter: drop-shadow(16px 16px 10px rgb(17, 17, 17));
+}
+
 .dark .functionality {
   border: 10px solid #464c6d;
 }
@@ -700,7 +708,7 @@ section {
 } 
 
 .why div {  
-  margin: 4rem;
+  margin: 2rem;
   max-width: 100%;
 }
 
@@ -737,8 +745,22 @@ section {
   transform: translateY(64px);
 }
 
+.why div {
+  margin: 1rem;
+  background-color: var(--alt-bg-color);
+  line-height: 1.5;
+  filter: none;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.why-phone {
+  filter: drop-shadow(16px 16px 10px var(--shadow-color));
+  width: 80%;
+}
+
 .home-phone {  
-  width: 100%; 
+  width: 80%; 
   margin-top: 20%;
 } 
   
