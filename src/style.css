@@ -16,18 +16,19 @@
   color: white;
 }
 
-.dark .why, .dark .team{
+.dark .why, .dark .team, .dark .contact-div{
   background-color: rgb(41, 41, 41);
 }
 
 .dark .dark-div {
   background-color: rgb(29, 29, 29);
-  filter: drop-shadow(16px 16px 10px rgb(0, 0, 0));
+  filter: none;
 
 }
 
-.dark .download {
+.dark .download, .dark textarea, .dark input{
   background-color: rgb(31, 31, 31);
+  color: white;
 }
 
 .dark .welcome-phone {
@@ -47,6 +48,10 @@
 .dark .popup .content {
   background-color: rgb(41, 41, 41);
   color: white;
+}
+
+.dark .team-box:hover {
+  background-color: rgb(21, 21, 21);
 }
 
 /* Main */
@@ -81,17 +86,9 @@ img {
   line-height: 2;  
 }
 
-.starscol h2 {
-  font-size: 2.2rem;
-}
-.starscol h3 {
-  font-size: 1.2rem;
-}
-
-
-p {
-  font-size: 1.5rem;
-}
+.starscol h2 { font-size: 2.2rem; }
+.starscol h3 { font-size: 1.2rem; }
+p { font-size: 1.5rem; }
 
 a {
   text-decoration: none;
@@ -117,6 +114,14 @@ i {
   margin: 5px;
 }
 
+textarea {
+  resize: none;
+  width: 100%;
+  padding: 5px;
+  border: rgb(60, 60, 60) 1px solid;
+  height: 200px;
+}
+
 .phone {
   border-radius:12%;
   border: 6px var(--complementary-color) solid;
@@ -135,7 +140,6 @@ i {
 .up-arrow {
   font-size: 4rem;
   color: var(--accent-color);
-  
 }
 
 /* Navbar */
@@ -162,8 +166,6 @@ nav {
 
 /* Home Section */
 
-
-
 .home {
   color: var(--alt-bg-color);
   background: url(images/background.jpg) no-repeat;
@@ -178,9 +180,7 @@ nav {
 }
 
 
-.home div h3 {
-  margin-top: 10%;
-}
+.home div h3 {margin-top: 10%;}
 
 .home-phone {
   margin-top: 20%;
@@ -201,9 +201,7 @@ nav {
   
 }
 
-.button:hover {
-	background-color:#2e2e2e;
-}
+.button:hover {background-color:#2e2e2e;}
 
 .button:active {
 	position:relative;
@@ -284,9 +282,7 @@ nav {
   transform: translateY(-20px); 
 }
 
-.functionality-container a h2 {
-  font-size: 1.4rem;
-}
+.functionality-container a h2 {font-size: 1.4rem;}
 
 .functionality-container a img {
   width: 80%;
@@ -339,9 +335,8 @@ nav {
   padding: 0 20px 20px 20px;
 }
 
-.content p {
-  font-size: 1.1rem;
-}
+.content p {font-size: 1.1rem;}
+
 /* Team Section */
 
 .team {
@@ -372,9 +367,7 @@ nav {
   line-height: 1.5;
 }
 
-.flex-div p {
-  font-size: 1.2rem;
-}
+.flex-div p {font-size: 1.2rem;}
 
 .team-container div img {
   width: 100%;
@@ -390,13 +383,9 @@ nav {
   min-height: 80vh;
 }
 
-.download div {
-  margin: 5%;
-}
+.download div {margin: 5%;}
 
-.download div h2 {
-  font-weight: lighter;
-}
+.download div h2 {font-weight: lighter;}
 
 .welcome-phone {
   width:80%;
@@ -432,7 +421,7 @@ footer p {
 .label {
   width: 70px;
   height: 29px;
-  background-color: #111;
+  background-color: rgb(60, 60, 60);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -452,18 +441,78 @@ footer p {
   transition: transform 330ms ease-in-out;
 }
 
-.moon {
-  color: var(--accent-color);
+.moon {color: var(--accent-color);}
+
+.sun {color: var(--accent-color);}
+
+.checkbox:checked + .label .switcher {transform: translateX(28px);}
+
+/* Contact */
+
+.contact {
+  min-height: 80vh;
+  background: url(images/background.jpg) no-repeat;
+  background-size: cover;
+  background-blend-mode: hue;
 }
 
-.sun {
-  color: var(--accent-color);
+.contact-div {
+  width: 600px;
+  background-color: var(--alt-bg-color);
+  margin: 5% 0;
+  padding: 3%;
 }
 
-.checkbox:checked + .label .switcher {
-  transform: translateX(28px);
+.contact-div .contact-heading{
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+.contact-div .contact-heading h1{
+  font-size: 2rem;
+}
+
+.contact-div .contact-heading h3{
+  font-weight: 100;
+}
+
+.contact-names {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.contact-form input {
+  height: 40px;
+  width: 100%;
+  padding: 5px;
+  border: rgb(61, 61, 61) 1px solid;
+}
+
+.contact-submit {
+  margin-top: 5%;
+	background-color:#161f19;
+	border-radius:5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+.contact-submit:hover {
+	background-color:#424242;
+}
+.contact-submit:active {
+	position:relative;
+	top:1px;
+}
+
+        
+label {
+  font-size: 1rem;
+}
 
 /* Hamburger Menu */
 
@@ -717,6 +766,11 @@ i:not(.fa-regular, .up-arrow) {
 .team-box {
   width: 15rem;
 }
+
+.contact-div {
+  width: 450px;
+}
+
 }
  
 @media only screen and (max-width: 576px) {
@@ -725,7 +779,7 @@ i:not(.fa-regular, .up-arrow) {
   font-size: 1.5rem;
 }
 
-section {
+section:not(.contact) {
   flex-direction: column;
   padding-bottom: 5%;
 }
@@ -774,7 +828,6 @@ section {
   margin: 0 auto 20px auto;
 }
 
-
 .welcome-phone {
   width: 18em;
   margin: 10%;
@@ -784,10 +837,14 @@ section {
   text-align: center;
 }
 
+.contact-div {
+  width: 400px;
+}
+
 } 
 
 @media only screen and (max-width: 480px) {
-section {
+section:not(.contact) {
   flex-direction: column;
 }
 .starscol h1 {
@@ -838,6 +895,15 @@ section {
 
 .popup .content p {
   font-size: 0.8rem;
+}
+
+.contact-div {
+  width: 350px;
+  padding: 20px;
+}
+
+textarea {
+  height: 100px;
 }
 
 } 

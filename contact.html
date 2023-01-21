@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  
+  <title>STARS</title>
+  <link rel="icon" type="image/x-icon" href="src/images/favicon-star.png">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="src/style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons-->
+  <script src="https://kit.fontawesome.com/7a70d5c651.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- Javascript -->
+<script src="src/script.js"></script>
+
+<body>
+  
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <a id="titleNav" href="#home"><i class="fa-regular fa-star"></i>STARS</a>
+
+      <!-- Hamburger Menu -->
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <input type="checkbox" class="checkbox" id="checkbox" onclick="toggleDark()">
+          <label for="checkbox" class="label">
+            <i class="fa-regular fa-moon moon"></i>     
+            <i class="fa-solid fa-sun sun"></i>
+            <div class="switcher"></div>  
+        </label>
+      </li>
+        
+    </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-div">
+        <div class="contact-heading">
+            <h1>Contact Us</h1> <br>
+            <h3>Any feedback for STARS is welcome!</h3>
+        </div>
+        
+        
+        <form action="mailto:judebislig@gmail.com" class="contact-form">
+            <div class="contact-names">
+                <div>
+                    <label for="fname">First Name</label> <br>
+                    <input type="text" id="fname" name="firstname" required> 
+                </div>
+                <div>
+                    <label for="lname">Last Name</label> <br>
+                    <input type="text" id="lname" name="lastname" required> <br>
+                </div>
+                
+            </div>
+            <div>
+                <label for="email">Email</label>
+		        <input name="email" type="email" required/>
+                <label for="subject">Subject</label> <br>
+                <textarea id="subject" name="subject" required></textarea>
+                <input type="submit" value="Submit" class="contact-submit">
+            </div>
+          </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+    <a href="https://www.linkedin.com/in/jude-bislig-56547a224/"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/judebislig"><i class="fa-brands fa-github"></i></a>
+    <br>
+    <p>© Copyright 2022 STARS</p>
+  </footer>
+
+</body>
+
+<script>
+  
+  </script>
+</html>
