@@ -5,6 +5,7 @@
   --off-bg-color: #f2f2f2;
   --complementary-color: rgb(18, 18, 18);
   --shadow-color: #c5c5c5;
+  --accent-color:#ffa502;
 }
 
 
@@ -41,6 +42,11 @@
 
 .dark .functionality {
   border: 10px solid #15172c;
+}
+
+.dark .popup .content {
+  background-color: rgb(41, 41, 41);
+  color: white;
 }
 
 /* Main */
@@ -96,6 +102,11 @@ a:hover {
   color: var(--shadow-color);
 }
 
+span a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
 form {
   line-height: 2;
   font-size: 1.25rem;
@@ -123,7 +134,7 @@ i {
 
 .up-arrow {
   font-size: 4rem;
-  color: rgb(97, 79, 129);
+  color: var(--accent-color);
   
 }
 
@@ -211,7 +222,7 @@ nav {
   margin: 8%;
   padding: 30px;
   background-color: var(--off-bg-color);
-  border-radius:28px;
+  border-radius:10px;
   line-height: 1.5;
   filter: drop-shadow(16px 16px 10px var(--shadow-color));
 }
@@ -225,20 +236,8 @@ nav {
 .flex-div {
   margin: 5% auto;
   padding: 20px;
-  border-radius:28px;
-  filter: drop-shadow(16px 16px 10px var(--shadow-color));
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.flex-div:hover {
-  transform: translateY(-20px);
+  border-radius:10px;
+  
 }
 
 .functionality {
@@ -259,6 +258,7 @@ nav {
   background-color: var(--main-darker-color);
   filter: drop-shadow(8px 8px 5px var(--complementary-color));
   color: var(--alt-bg-color);
+  
 }
 
 /* Fix for higher screen size */
@@ -268,8 +268,20 @@ nav {
   }
 }
 
+.functionality-container a:not(.overlay) {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
 .functionality-container a:not(.overlay):hover {
   background-color: var(--main-darker-color);
+  transform: translateY(-20px); 
 }
 
 .functionality-container a h2 {
@@ -304,15 +316,14 @@ nav {
 }
 .popup {
   margin: 70px auto;
-  padding: 30px;
+  padding-top: 30px;
   background: var(--main-darker-color);
-  border-radius: 5px;
   width: 50%;
   max-height: 80%;
   position: relative;
   transition: all 2s ease-in-out;
   z-index: 5;
-  border-radius:28px;
+  border-radius:10px;
 
 }
 
@@ -321,6 +332,11 @@ nav {
   overflow: none;
   text-align: left;
   line-height: 1.5;
+  background-color: var(--alt-bg-color);
+  border-radius: 0 0 10px 10px;
+  margin-top: 20px;
+  color: black;
+  padding: 0 20px 20px 20px;
 }
 
 .content p {
@@ -332,17 +348,28 @@ nav {
   display: block;
   padding-top: 50px;
   text-align: center;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .team-container {
-  display: flex;
-  margin: 0 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 3% 5%;
 }
 
-.team-container div {
+.team-box {
   background-color: var(--off-bg-color);
-  width: 15%;
+  width: 90%;
+  
+}
+
+.team-box:hover {
+  background-color: #e3e3e3;
+}
+
+
+.team-box h2 {
+  line-height: 1.5;
 }
 
 .flex-div p {
@@ -426,11 +453,11 @@ footer p {
 }
 
 .moon {
-  color: #ffa502;
+  color: var(--accent-color);
 }
 
 .sun {
-  color: #ffa502;
+  color: var(--accent-color);
 }
 
 .checkbox:checked + .label .switcher {
@@ -684,10 +711,10 @@ i:not(.fa-regular, .up-arrow) {
 }
 
 .team-container {
-  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
 }
 
-.team-container div {
+.team-box {
   width: 15rem;
 }
 }
@@ -738,6 +765,16 @@ section {
   width: 100%;
 }
 
+.team-container {
+  align-items: center;
+}
+
+.team-box {
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+
 .welcome-phone {
   width: 18em;
   margin: 10%;
@@ -754,13 +791,13 @@ section {
   flex-direction: column;
 }
 .starscol h1 {
-  font-size:2.0em;
+  font-size:2.0rem;
 }
 .starscol h2 {
-  font-size:1.0em;
+  font-size:1.0rem;
 }
 .starscol h3 {
-  font-size:1em;
+  font-size:1rem;
 }
 
 .home div {
@@ -774,6 +811,14 @@ section {
   filter: none;
   text-align: center;
   padding-bottom: 0;
+}
+
+.team-box h2 {
+  font-size: 0.8rem;
+}
+
+.team-box p {
+  font-size: 0.7rem;
 }
 
 .why-phone {
