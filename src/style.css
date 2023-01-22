@@ -555,7 +555,7 @@ label {
 }
 
 .about-image {
-  width: 60%;
+  width: 80%;
   padding: 5%;
 }
 
@@ -730,6 +730,14 @@ label {
   font-size: 0.9rem;
 }
 
+.about-page-section div{
+  margin: 50px auto;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+}
+
 } 
 
 @media only screen and (max-width: 768px) {
@@ -823,6 +831,18 @@ i:not(.fa-regular, .up-arrow) {
   width: 450px;
 }
 
+.grid-1, .grid-2{
+  display: block;
+}
+
+.about-page-section {
+  padding: 50px;
+}
+
+.about-image {
+  width: 50%;
+}
+
 }
  
 @media only screen and (max-width: 576px) {
@@ -896,6 +916,21 @@ section:not(.contact) {
 
 .contact-div {
   width: 400px;
+}
+
+.about-content {
+  width: 100%;
+}
+
+.about-image {
+  width: 100%;
+  text-align: center;
+
+}
+
+.about-image img {
+  border-radius: 20px;
+  width: 50%;
 }
 
 } 
