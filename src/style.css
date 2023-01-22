@@ -120,6 +120,7 @@ textarea {
   padding: 5px;
   border: rgb(60, 60, 60) 1px solid;
   height: 200px;
+  background-color: rgb(235, 235, 235);
 }
 
 .phone {
@@ -170,7 +171,6 @@ nav {
   color: var(--alt-bg-color);
   background: url(images/background.jpg) no-repeat;
   background-size: cover;
-  background-blend-mode: hue;
   padding-bottom: 5%;
 }
 
@@ -447,7 +447,7 @@ footer p {
 
 .checkbox:checked + .label .switcher {transform: translateX(28px);}
 
-/* Contact */
+/* Contact Page*/
 
 .contact {
   min-height: 80vh;
@@ -482,15 +482,18 @@ footer p {
   column-gap: 2rem;
 }
 
-.contact-form input {
+.contact-form input:not(.contact-submit) {
   height: 40px;
   width: 100%;
   padding: 5px;
   border: rgb(61, 61, 61) 1px solid;
+  background-color: rgb(235, 235, 235);
+
 }
 
 .contact-submit {
   margin-top: 5%;
+  width: 100%;
 	background-color:#161f19;
 	border-radius:5px;
 	display:inline-block;
@@ -508,10 +511,59 @@ footer p {
 	position:relative;
 	top:1px;
 }
-
-        
+  
 label {
   font-size: 1rem;
+}
+
+/* About Page */
+
+.about-page-section {
+  color: var(--alt-bg-color);
+  background: url(images/background.jpg) no-repeat;
+  background-size: cover;
+  background-blend-mode: hue;
+  min-height: 100vh;
+  align-items: center;
+  display: block;
+  color: black;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+}
+
+.about-page-section div {
+  background-color: white;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.about-content {
+  width: 80%;
+  padding: 5%;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+}
+
+.about-image {
+  width: 60%;
+  padding: 5%;
+}
+
+.about-image img {
+  width: 100%;
+  margin: auto;
+  border: none;
+  border-radius: 50px;
 }
 
 /* Hamburger Menu */
