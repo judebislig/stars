@@ -15,3 +15,9 @@ function scrollUp() {
     behavior: "smooth",
   });
 };
+
+//Download alert
+
+function downloadPrompt() {
+  alert("App isn't available yet. Stay tuned!");
+}
